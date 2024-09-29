@@ -1,14 +1,15 @@
 .sidebar {
     z-index: 1000;
     position: fixed;
-    left: 250px;
+    left: 225px;
     top: 0;
-    width: 250px;
+    width: 225px;
     height: 100%;
-    margin-left: -250px;
+    margin-left: -225px;
     overflow-y: auto;
     background: #000;
     color: white;
+    text-decoration: none;
 }
 
 .sidebar > ul {
@@ -20,27 +21,26 @@
 
 .sidebar .name {
     font-size: 18px;
-    margin-bottom: 40px;
 }
 
-.sidebar .name > a {
-    color: white;
-    text-decoration: none;
+.sidebar .info {
+    margin-bottom: 40px;
 }
 
 .sidebar li {
     display: block;
     margin: 5px;
-    padding: 0;
 }
 
-.sidebar li > a {
-    margin: 5px 10px;
+.sidebar ul > li > a {
+    margin-left: 10px;
+}
+
+.sidebar a {
     color: white;
     text-decoration: none;
 }
 
-.sidebar li > a:hover {
+.sidebar a:hover {
     color: gray;
-    text-decoration: none;
 }
