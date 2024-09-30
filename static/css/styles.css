@@ -3,23 +3,25 @@ html {
   font-size: 14px;
 }
 
-.wrapper {
+body {
+  display: block;
+  margin: 8px;
+}
+
+div.wrapper {
   width: 100%;
 }
 
 main {
   display: block;
-  margin: 5px 2.5% 0px 225;
+  margin-left: max(15%, 200px);
   font-size: 18px;
+  max-width: 1200px;
 }
 
 main h1 {
+  margin: 15px 0;
   font-size: 24px;
-}
-
-main img {
-  float: left;
-  padding-right: 10px;
 }
 
 main a {
@@ -29,6 +31,36 @@ main a {
 
 main a:hover {
   color: rgb(115, 0, 255);
+}
+
+main img {
+  float: left;
+  padding-right: 10px;
+}
+
+embed {
+  width: 100%;
+  height: 100%;
+}
+
+div.abstract {
+  max-width: 800px;
+  width: 100%;
+}
+
+div.abstract > h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+div.abstract > h2 { 
+  font-size: 16px;
+  font-weight: normal;
+}
+
+div.abstract > p { 
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .silent, .silent:hover {
