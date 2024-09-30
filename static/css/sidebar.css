@@ -1,21 +1,21 @@
 .sidebar {
     z-index: 1000;
     position: fixed;
-    left: 225px;
+    left: 200px;
     top: 0;
-    width: 225px;
+    min-width: 200px;
+    width: 15%;
     height: 100%;
-    margin-left: -225px;
+    margin-left: -200px;
     overflow-y: auto;
     background: #000;
     color: white;
-    text-decoration: none;
+    overflow-x: hidden;
 }
 
-.sidebar > ul {
+.sidebar ul {
     padding: 0;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 20px;
     list-style: none;
 }
 
@@ -27,13 +27,24 @@
     margin-bottom: 40px;
 }
 
+.name:hover b {
+    display:none;
+}
+
+.name:hover::before {
+    content: "['ædəm 'lif]"
+}
+
 .sidebar li {
-    display: block;
     margin: 5px;
 }
 
 .sidebar ul > li > a {
+    display: block; /* enables overflow behavior */
     margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .sidebar a {
