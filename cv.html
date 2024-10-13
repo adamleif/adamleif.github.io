@@ -1,30 +1,48 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Adam Leif CV</title>
-    <link rel="stylesheet" href="/static/css/sidebar.css">
-    <link rel="stylesheet" href="/static/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adam Leif CV</title>
+  <link rel="stylesheet" href="/static/css/sidebar.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
 </head>
-  
-<html lang="en">
-  <body>
-    <div class="wrapper">
-      <div class="sidebar">
-        <ul>
-          <div class="info">
-            <li><a class="name" href="/"><b>Adam Leif</b></a></li>
-            <li><a class="email" href="mailto: adamleif@ucla.edu">adamleif [at] ucla [dot] edu</a></li>
-          </div>
-          <li><b>Professional</b></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="honors_thesis.html">Honors Thesis</a></li>
-          <li><a href="https://github.com/asl7168/craigslist_housing">Craigslist Housing</a></li>
-        </ul>
-      </div>
-      <main>
-        <embed src="attachments/Adam_Leif_CV_September_2024.pdf"/>
-      </main>
-    </div>
-  </body>
-</html>
 
+<html lang="en">
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <script src="js/dropdown.js"></script>
+      <ul>
+        <div class="info">
+          <li><a class="name" href="/"><b>Adam Leif</b></a></li>
+          <li class="default"><a class="email" href="mailto: adamleif@ucla.edu">adamleif [at] ucla [dot]
+              edu</a></li>
+        </div>
+        <li class="default"><b>Professional</b></li>
+        <li><a href="cv.html">CV</a></li>
+        <li class="default"><a href="honors_thesis.html">Honors Thesis</a></li>
+        <li class="default"><a href="https://github.com/asl7168/craigslist_housing">Craigslist Housing</a></li>
+        <li class="mobile">
+          <div class="dropdown">
+            <button class="drop-btn" type="button" onclick="toggleDropdown()">Projects</button>
+            <div class="drop-content" id="drop-content">
+              <a href="honors_thesis.html">Honors Thesis</a>
+              <a href="https://github.com/asl7168/craigslist_housing">Craigslist Housing</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <main style="max-width: none;">
+      <object class="pdf" data="attachments/Adam_Leif_CV_September_2024.pdf#zoom=100" type="application/pdf">
+        <p>
+          Sorry, it looks like your browser can't embed the requested PDF. Try
+          <a href="attachments/Adam_Leif_CV_September_2024.pdf" target="_blank">viewing it here</a>
+          instead.
+        </p>
+      </object>
+    </main>
+  </div>
+</body>
+
+</html>

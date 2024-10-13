@@ -1,63 +1,76 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Adam Leif Undergraduate Honors Thesis</title>
-    <link rel="stylesheet" href="/static/css/sidebar.css">
-    <link rel="stylesheet" href="/static/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adam Leif Undergraduate Honors Thesis</title>
+  <link rel="stylesheet" href="/static/css/sidebar.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
 </head>
-  
-<html lang="en">
-  <body>
-    <div class="wrapper">
-        <div class="sidebar">
-          <ul>
-            <div class="info">
-              <li><a class="name" href="/"><b>Adam Leif</b></a></li>
-              <li><a class="email" href="mailto: adamleif@ucla.edu">adamleif [at] ucla [dot] edu</a></li>
-            </div>
-            <li><b>Professional</b></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="honors_thesis.html">Honors Thesis</a></li>
-            <li><a href="https://github.com/asl7168/craigslist_housing">Craigslist Housing</a></li>
-          </ul>
-        </div>
-        <main>
-          <h1></h1>
-          <p>
-            My undergraduate honors thesis focused on further investigating Noun (head) movement in 
-            English, a somewhat controversial proposal (partially due to the covert nature of that 
-            movement in English, unlike in Romance languages). Below is the abstract that I submitted to 
-            <a href="https://www.caurs.com/">CAURS 2024</a>, and I'd be happy to provide the full thesis on request.
-          </p>
-          <br>
-          <div class="abstract">
-            <h1>Investigating N-Movement in English: Presence and Proposals</h1>
-            <h2>Adam Leif and Masaya Yoshida</h2>
-            <p>
-              It has been suggested that the Noun (N) heads of NPs in English can move and that N may land in the 
-              “little n” (n) head of an nP, a proposed functional phrase between Determiner Phrase (DP) and NP. 
-              However, other N-movement proposals suggest that N may instead move elsewhere. Additionally, there is 
-              little experimental evidence of N-movement in English, where, unlike in Romance languages, such movement 
-              would occur covertly — and, therefore, be difficult to observe. If N-movement does occur in English, it 
-              should be sensitive to movement constraints, like the Head Movement Constraint and Coordinate Structure 
-              Constraint. To investigate whether this is the case, we introduce the pseudo-Prepositional Phrase (PP) 
-              coordination construction (e.g. “I want to distinguish the fear<sub>1</sub> of John<sub>2</sub> t<sub>1</sub> 
-              of Mary and of David<sub>3</sub> t<sub>1</sub> of Sarah”), a potential N-movement structure where the N 
-              heads of coordinated NPs move across-the-board (ATB) to the same hierarchically higher position. We utilize 
-              this construction in a formal acceptability rating experiment, manipulating CONNECTIVE (and vs. from) and 
-              GAP (present vs. absent) and anticipating similarly high ratings in both gap-absent cases (since neither 
-              involves movement that potentially violates movement constraints). If ATB-N-movement occurs in English, 
-              and-gap should be rated lower than the gap-absent cases but higher than from-gap: the former observes HMC 
-              and CSC while the latter violates them. We found a significant effect of GAP (t = 8.2456) and GAP x CONNECTIVE 
-              (t = -3.8954), demonstrating that the pseudo-PP coordination construction involves ATB-N-movement. Through 
-              further analysis, we show that the moved N lands in n: but, interestingly, this does not appropriately describe 
-              how other noun types, like non-verb-derived light (e.g. someone) and heavy nouns (e.g. candidate), move. As 
-              such, we suggest that non-verb-derived nouns are treated differently than verb-derived ones, potentially 
-              according to other previous N-movement proposals.
-            </p>
-          </div>
-        </main>
-      </div>
-  </body>
-</html>
 
+<html lang="en">
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <script src="js/dropdown.js"></script>
+      <ul>
+        <div class="info">
+          <li><a class="name" href="/"><b>Adam Leif</b></a></li>
+          <li class="default"><a class="email" href="mailto: adamleif@ucla.edu">adamleif [at] ucla [dot]
+              edu</a></li>
+        </div>
+        <li class="default"><b>Professional</b></li>
+        <li><a href="cv.html">CV</a></li>
+        <li class="default"><a href="honors_thesis.html">Honors Thesis</a></li>
+        <li class="default"><a href="https://github.com/asl7168/craigslist_housing">Craigslist Housing</a></li>
+        <li class="mobile">
+          <div class="dropdown">
+            <button class="drop-btn" type="button" onclick="toggleDropdown()">Projects</button>
+            <div class="drop-content" id="drop-content">
+              <a href="honors_thesis.html">Honors Thesis</a>
+              <a href="https://github.com/asl7168/craigslist_housing">Craigslist Housing</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <h1></h1>
+      <p>
+        My undergraduate honors thesis focused on further investigating Noun (head) movement in
+        English, a somewhat controversial proposal (partially due to the covert nature of that
+        movement in English, unlike in Romance languages). Below is the abstract that I submitted to
+        <a href="https://www.caurs.com/">CAURS 2024</a>, and I'd be happy to provide the full thesis on request.
+      </p>
+      <br>
+      <div class="abstract">
+        <h1>Investigating N-Movement in English: Presence and Proposals</h1>
+        <h2>Adam Leif and Masaya Yoshida</h2>
+        <p>
+          It has been suggested that the Noun (N) heads of NPs in English can move and that N may land in the
+          “little n” (n) head of an nP, a proposed functional phrase between Determiner Phrase (DP) and NP.
+          However, other N-movement proposals suggest that N may instead move elsewhere. Additionally, there is
+          little experimental evidence of N-movement in English, where, unlike in Romance languages, such movement
+          would occur covertly — and, therefore, be difficult to observe. If N-movement does occur in English, it
+          should be sensitive to movement constraints, like the Head Movement Constraint and Coordinate Structure
+          Constraint. To investigate whether this is the case, we introduce the pseudo-Prepositional Phrase (PP)
+          coordination construction (e.g. “I want to distinguish the fear<sub>1</sub> of John<sub>2</sub> t<sub>1</sub>
+          of Mary and of David<sub>3</sub> t<sub>1</sub> of Sarah”), a potential N-movement structure where the N
+          heads of coordinated NPs move across-the-board (ATB) to the same hierarchically higher position. We utilize
+          this construction in a formal acceptability rating experiment, manipulating CONNECTIVE (and vs. from) and
+          GAP (present vs. absent) and anticipating similarly high ratings in both gap-absent cases (since neither
+          involves movement that potentially violates movement constraints). If ATB-N-movement occurs in English,
+          and-gap should be rated lower than the gap-absent cases but higher than from-gap: the former observes HMC
+          and CSC while the latter violates them. We found a significant effect of GAP (t = 8.2456) and GAP x CONNECTIVE
+          (t = -3.8954), demonstrating that the pseudo-PP coordination construction involves ATB-N-movement. Through
+          further analysis, we show that the moved N lands in n: but, interestingly, this does not appropriately
+          describe
+          how other noun types, like non-verb-derived light (e.g. someone) and heavy nouns (e.g. candidate), move. As
+          such, we suggest that non-verb-derived nouns are treated differently than verb-derived ones, potentially
+          according to other previous N-movement proposals.
+        </p>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
