@@ -22,6 +22,7 @@
     display: block;
     width: 87px;
     font-size: 18px;
+    margin-right: 7px;
 }
 
 .sidebar .name:hover b {
