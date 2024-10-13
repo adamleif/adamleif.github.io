@@ -34,14 +34,30 @@
       </ul>
     </div>
     <main style="max-width: none;">
+      <p id="successMessage">
+        PDF not loading correctly? Try viewing it 
+        <a href="attachments/Adam_Leif_CV_September_2024.pdf" target="_blank">here</a> 
+        instead.
+      </p>
       <object class="pdf" data="attachments/Adam_Leif_CV_September_2024.pdf#zoom=100" type="application/pdf">
         <p>
-          Sorry, it looks like your browser can't embed the requested PDF. Try
-          <a href="attachments/Adam_Leif_CV_September_2024.pdf" target="_blank">viewing it here</a>
+          Sorry, it looks like your browser can't embed the requested PDF. Try viewing it 
+          <a href="attachments/Adam_Leif_CV_September_2024.pdf" target="_blank">here</a>
           instead.
         </p>
       </object>
     </main>
+    <script>
+      // Get the object element and the success message
+      var pdfObject = document.getElementsByClassName('pdf');
+      var successMessage = document.getElementById('successMessage');
+
+      // Listen for the load event
+      pdfObject.addEventListener('load', function() {
+        // Show the success message if the PDF loads
+        successMessage.style.display = 'block';
+      });
+    </script>
   </div>
 </body>
 
