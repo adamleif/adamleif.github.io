@@ -24,7 +24,7 @@ div.wrapper {
 
   .default {
     display: none;
-    margin: none;
+    margin: 0;
   }
 }
 

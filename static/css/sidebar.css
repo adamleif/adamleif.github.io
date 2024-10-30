@@ -5,6 +5,27 @@
     color: white;
 }
 
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar li {
+    /*force sidebar items to occupy a single line*/
+    white-space: nowrap;
+}
+
+.sidebar li * {
+    /*set overflow behavior to hidden + ellipsis for li children*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar /*.mobile*/ .dropdown {
+    /*force dropdowns to always be visible*/
+    overflow: visible;
+}
+
 .sidebar a, button {
     background: none;
     border: none;
@@ -21,7 +42,7 @@
 .sidebar .name {
     display: block;
     font-size: 18px;
-    width: 88px;
+    width: 88px; /*static width to prevent resizing on hover*/
 }
 
 .sidebar .name:hover b {
@@ -47,40 +68,42 @@
         align-items: center;
         height: 100%;
         width: 100%;
-        padding: 0;
         margin: 0;
-        list-style: none;
     }
 
     .sidebar li {
-        padding: 10px;
+        height: 100%;
+        max-width: 100px;
+        padding: 0px 10px;
+        align-content: center;
+    }
+
+    .mobile:focus-within {
+        background: #333;
     }
 
     .dropdown {
-        float: left;
-        overflow: hidden;
+        position: relative;
     }
 
     .drop-btn {
         padding: 0px;
+        height: 100%;
     }
 
     .drop-btn:focus {
-        background: #333;
-        color: white;
+        color: gray;
     }
 
     .drop-content {
-        z-index: 500;
-        overflow: visible;
         display: none;
         position: absolute;
         background: #777;
-        width: 50%;
+        width: 300%;
+        left: -10px;
     }
 
     .drop-content a {
-        float: none;
         display: block;
         text-align: left;
         padding: 10px;
@@ -100,14 +123,10 @@
         width: 15%;
         height: 100%;
         margin-left: -215px;
-        overflow-y: auto;
-        overflow-x: hidden;
     }
 
     .sidebar ul {
-        padding: 0;
         margin: 20px;
-        list-style: none;
     }
 
     .sidebar .info {
@@ -120,15 +139,11 @@
 
     .sidebar ul > li > a {
         display: block;
-        /* enables overflow behavior */
         margin-left: 10px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     .mobile {
         display: none;
-        margin: none;
+        margin: 0;
     }
 }
