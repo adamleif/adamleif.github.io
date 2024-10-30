@@ -20,9 +20,8 @@
 
 .sidebar .name {
     display: block;
-    width: 87px;
     font-size: 18px;
-    margin-right: 7px;
+    width: 88px;
 }
 
 .sidebar .name:hover b {
@@ -30,7 +29,7 @@
 }
 
 .sidebar .name:hover::before {
-    content: "['ædəm 'lif]"
+    content: "['æɾəm 'lif]"
 }
 
 @media only screen and (max-width: 670px) {
@@ -63,8 +62,7 @@
     }
 
     .drop-btn {
-        padding-top: 17px;
-        padding-bottom: 17px;
+        padding: 0px;
     }
 
     .drop-btn:focus {
