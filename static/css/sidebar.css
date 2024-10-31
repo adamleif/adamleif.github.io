@@ -21,7 +21,7 @@
     text-overflow: ellipsis;
 }
 
-.sidebar /*.mobile*/ .dropdown {
+.sidebar /*.compact*/ .dropdown {
     /*force dropdowns to always be visible*/
     overflow: visible;
 }
@@ -53,7 +53,7 @@
     content: "['æɾəm 'lif]"
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 749px) {
     .sidebar {
         left: 0;
         top: 50px;
@@ -78,7 +78,7 @@
         align-content: center;
     }
 
-    .mobile:focus-within {
+    .compact:focus-within {
         background: #333;
     }
 
@@ -115,7 +115,7 @@
     }
 }
 
-@media only screen and (min-width: 670px) {
+@media only screen and (min-width: 750px) {
     .sidebar {
         left: 215px;
         top: 0;
@@ -142,7 +142,7 @@
         margin-left: 10px;
     }
 
-    .mobile {
+    .compact {
         display: none;
         margin: 0;
     }
