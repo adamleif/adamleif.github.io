@@ -1,8 +1,18 @@
+:root {
+    --bodyWhite: #DCDCDC;
+    --background: #0E0E0E;
+    --linkHover: #8E8E8E;
+    --dropBtnBackground: #2E2E2E;
+    --dropBtnText: #DADADA;
+    --dropItem: #5F5F5F;
+    --dropItemFocus: #717171;
+}
+
 .sidebar {
     z-index: 100;
     position: fixed;
-    background: #000;
-    color: white;
+    background: var(--background);
+    color: var(--bodyWhite);
 }
 
 .sidebar ul {
@@ -30,13 +40,13 @@
     background: none;
     border: none;
     outline: none;
-    color: white;
+    color: var(--bodyWhite);
     text-decoration: none;
     font-size: 14px;
 }
 
 .sidebar a:hover, button:hover {
-    color: gray;
+    color: var(--linkHover);
 }
 
 .sidebar .name {
@@ -51,6 +61,10 @@
 
 .sidebar .name:hover::before {
     content: "['æɾəm 'lif]"
+}
+
+.sidebar li:has(#dark-mode-toggle) {
+    padding: 0;
 }
 
 @media only screen and (max-width: 749px) {
@@ -79,7 +93,7 @@
     }
 
     .compact:focus-within {
-        background: #333;
+        background: var(--dropBtnBackground);
     }
 
     .dropdown {
@@ -92,13 +106,14 @@
     }
 
     .drop-btn:focus {
-        color: gray;
+        background: var(--dropBtnBackground);
+        color: var(--dropBtnText);
     }
 
     .drop-content {
         display: none;
         position: absolute;
-        background: #777;
+        background: var(--dropItem);
         width: 300%;
         left: -10px;
     }
@@ -110,8 +125,18 @@
     }
 
     .drop-content a:hover {
-        background: #555;
-        color: white;
+        background: var(--dropItemFocus);
+        color: var(--bodyWhite);
+    }
+
+    .sidebar li:has(#dark-mode-toggle) {
+        margin-left: auto;
+        padding-right: 5px;
+    }
+
+    .cs-sun, .cs-moon {
+        width: 35px;
+        height: auto;
     }
 }
 
@@ -145,5 +170,15 @@
     .compact {
         display: none;
         margin: 0;
+    }
+
+    .sidebar li:has(#dark-mode-toggle) {
+        margin-left: auto;
+        padding-top: 20px;
+    }
+
+    .sidebar .cs-sun, .cs-moon {
+        width: 50px;
+        height: auto;
     }
 }
