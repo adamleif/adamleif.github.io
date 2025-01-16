@@ -4,6 +4,9 @@
   <title>Adam Leif</title>
   <link rel="stylesheet" href="/static/css/sidebar.css">
   <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="/static/css/dark-styles.css">
+  <script src="js/dropdown.js"></script>
+  <script src="js/dark-mode.js"></script>
 </head>
 
 <html lang="en">
@@ -11,7 +14,6 @@
 <body>
   <div class="wrapper">
     <div class="sidebar">
-      <script src="js/dropdown.js"></script>
       <ul>
         <div class="info">
           <li><a class="name" href="/"><b>Adam Leif</b></a></li>
@@ -31,7 +33,16 @@
             </div>
           </div>
         </li>
+        <li>
+          <button id="dark-mode-toggle">
+            <!--Moon is an inline SVG so you can edit the color if needed-->
+            <!--toggle mode by Iconographer from <a href="https://thenounproject.com/browse/icons/term/toggle-mode/" target="_blank" title="toggle mode Icons">Noun Project</a> (CC BY 3.0)-->
+            <img class="light cs-moon" src="/attachments/turn-off-light.png">
+            <img class="dark cs-sun" aria-hidden="true" src="/attachments/turn-on-light.png">
+          </button>
+        </li>
       </ul>
+      
     </div>
     <main>
       <img src="attachments/me.jpg" width="145px">
