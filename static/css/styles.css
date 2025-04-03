@@ -49,6 +49,14 @@ main {
   text-align: justify;
 }
 
+main.cv {
+  max-width: 100%;
+}
+
+main.cv .pdf {
+  height: 100vh; /* Make the PDF take up the full height of the viewport */
+}
+
 main h1 {
   margin: 15px 0;
   font-size: 24px;
