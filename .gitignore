@@ -1,0 +1,6 @@
+_site/
+.bundle/
+.DS_Store
+Thumbs.db
+.vscode/
+*.log

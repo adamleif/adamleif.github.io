@@ -1,0 +1,10 @@
+url: "https://adamleif.net"
+enforce_ssl: adamleif.net
+basurl: ""
+livereload: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
