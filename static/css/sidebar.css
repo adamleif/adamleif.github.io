@@ -154,17 +154,21 @@
         margin: 20px;
     }
 
+    .sidebar .section {
+        margin-top: 20px;
+    }
+
     .sidebar .info {
         margin-bottom: 40px;
     }
 
-    .sidebar li {
-        margin: 5px;
+    .sidebar .tab {
+        display: block;
+        padding-left: 10px;
     }
 
-    .sidebar ul > li > a {
-        display: block;
-        margin-left: 10px;
+    .sidebar li {
+        margin: 5px;
     }
 
     .compact {
