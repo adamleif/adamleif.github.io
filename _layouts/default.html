@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="/static/css/dark-styles.css">
   <script src="/js/dropdown.js"></script>
   <script src="/js/dark-mode.js"></script>
+  {% if page.maze %}
+    <link rel="stylesheet" href="/static/css/maze.css">
+    <script src="/js/maze-controller.js"></script>
+  {% endif %}
 </head>
 <body>
   <div class="wrapper">
