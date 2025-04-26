@@ -1,16 +1,14 @@
 main.maze {
+    height: 95vh;
+}
+
+div.maze {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 95vh;
 }
 
-main.maze p {
+div.maze p {
     padding: 15px;
-}
-
-.hidden {
-    display: none;
-    margin: 0;
 }

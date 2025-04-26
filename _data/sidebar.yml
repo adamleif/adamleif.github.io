@@ -1,0 +1,15 @@
+professional:
+  - title: "CV"
+    url: "cv.html"
+  - title: "GitHub"
+    url: "https://github.com/asl7168"
+    external: true
+
+projects:
+  - title: "Honors Thesis"
+    url: "honors_thesis.html"
+  - title: "Craigslist Housing"
+    url: "https://github.com/asl7168/craigslist_housing"
+    external: true
+  - title: "Maze Demo"
+    url: "maze.html"
