@@ -9,7 +9,7 @@ let l = true;
 let failed = false;
 let ended = false;
 
-window.onload = function () {
+document.addEventListener('DOMContentLoaded', function () {
     var instructions = document.getElementById("instructions");
     var left = document.getElementById("left");
     var right = document.getElementById("right");
@@ -117,4 +117,4 @@ window.onload = function () {
             }
         }
     });
-}
+});
