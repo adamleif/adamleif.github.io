@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	function enableDarkMode() {
 		document.body.classList.add('dark-mode');
 		sunToggle = document.body.getElementsByClassName("cs-sun")[0];
-		sunToggle.setAttribute("aria-hidden", "false");
+		sunToggle.setAttribute("aria-hidden", "true");
 
 		moonToggle = document.body.getElementsByClassName("cs-moon")[0];
-		moonToggle.setAttribute("aria-hidden", "true");
+		moonToggle.setAttribute("aria-hidden", "false");
 
 		localStorage.setItem('theme', 'dark');
 	}
@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.body.classList.remove('dark-mode');
 
 		moonToggle = document.body.getElementsByClassName("cs-moon")[0];
-		moonToggle.setAttribute("aria-hidden", "false");
+		moonToggle.setAttribute("aria-hidden", "true");
 
 		sunToggle = document.body.getElementsByClassName("cs-sun")[0];
-		sunToggle.setAttribute("aria-hidden", "true");
+		sunToggle.setAttribute("aria-hidden", "false");
 
 		localStorage.setItem('theme', 'light');
 	}

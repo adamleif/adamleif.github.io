@@ -1,18 +1,20 @@
 let sentence = ["The", "dog", "quietly", "chewed", "on", "the", "bone."]
-let l_distractors = ["xxx", "mip", "griffly", "strell", "ip", "sen", "lote."]
-let g_distractors = ["xxx", "sit", "weather", "table", "can", "fry", "joyful."]
+let l_distractors = ["x-x-x", "mip", "griffly", "strell", "ip", "sen", "lote."]
+let g_distractors = ["x-x-x", "sit", "weather", "table", "can", "fry", "joyful."]
 
 let l_maze = [];
 let g_maze = [];
 
 let l = true;
 let failed = false;
+let ended = false;
 
 window.onload = function () {
     var instructions = document.getElementById("instructions");
     var left = document.getElementById("left");
     var right = document.getElementById("right");
     var wrong = document.getElementById("wrong");
+    var end = document.getElementById("end");
     var index = 0;
 
     function startMaze(maze_type = "left") {
@@ -29,7 +31,7 @@ window.onload = function () {
             }
         }
 
-        instructions.classList.toggle("hidden");
+        instructions.classList.add("hidden");
         
         if (maze_type == "left") {
             left.innerText = l_maze[index][0];
@@ -45,41 +47,54 @@ window.onload = function () {
             console.log("SOMETHING IS WRONG")
         }
 
-        left.classList.toggle("hidden");
-        right.classList.toggle("hidden");  
+        left.classList.remove("hidden");
+        right.classList.remove("hidden");  
     }
 
     function resetMaze () {
-        failed = false;
         index = 0;
         l = true;
+        ended = false;
+        failed = false;
         l_maze = [];
         g_maze = [];
-        if (instructions.classList.contains("hidden")) { instructions.classList.toggle("hidden"); }
-        if (!wrong.classList.contains("hidden")) { wrong.classList.toggle("hidden"); }
-        if (!left.classList.contains("hidden")) { left.classList.toggle("hidden"); }
-        if (!right.classList.contains("hidden")) { right.classList.toggle("hidden"); }
-    }
 
-    function nextItem () {
-        index++;
-
-        if (l) {
-            left.innerText = l_maze[index][0];
-            right.innerText = l_maze[index][1];
-        }
-        else {
-            left.innerText = g_maze[index][0];
-            right.innerText = g_maze[index][1];
-        }
-        
+        if (instructions.classList.contains("hidden")) { instructions.classList.remove("hidden"); }
+        if (!wrong.classList.contains("hidden")) { wrong.classList.add("hidden"); }
+        if (!left.classList.contains("hidden")) { left.classList.add("hidden"); }
+        if (!right.classList.contains("hidden")) { right.classList.add("hidden"); }
+        if (!end.classList.contains("hidden")) { end.classList.add("hidden"); }
     }
 
     function wrongMaze() {
         failed = true;
-        left.classList.toggle("hidden");
-        right.classList.toggle("hidden");
-        wrong.classList.toggle("hidden");
+        left.classList.add("hidden");
+        right.classList.add("hidden");
+        wrong.classList.remove("hidden");
+    }
+
+    function endMaze() {
+        ended = true;
+        left.classList.add("hidden"); 
+        right.classList.add("hidden");
+        end.classList.remove("hidden");
+    }
+
+    function nextItem () {
+        index++;
+        
+        if (index >= sentence.length) {
+            console.log("AHHHHHHH")
+            endMaze();
+        } else {
+            if (l) {
+                left.innerText = l_maze[index][0];
+                right.innerText = l_maze[index][1];
+            } else {
+                left.innerText = g_maze[index][0];
+                right.innerText = g_maze[index][1];
+            }
+        }    
     }
 
     document.addEventListener('keydown', function(event) {
@@ -89,7 +104,7 @@ window.onload = function () {
         }
         else if (event.key.toLowerCase() === 'r') { resetMaze(); }
         else {
-            if (!failed)
+            if (!failed && !ended)
             {
                 if (event.key.toLowerCase() === 'f') {
                     if (sentence[index] == left.innerText) { nextItem(); }
@@ -103,4 +118,3 @@ window.onload = function () {
         }
     });
 }
-

@@ -1,0 +1,43 @@
+---
+layout: default 
+title: L-Maze
+main_class: maze
+maze: True
+---
+
+<h1>What is the maze task?</h1>
+<p>
+    Maze is an online (real-time), word-by-word reading task where participants are shown a pair of words -- 
+    a target and a distractor -- and asked to choose the one that appropriately continues the sentence. There 
+    are two common variants: L(exicality)-Maze, where a real word and a nonce word are shown, and the subject 
+    identifies the valid word; and G(rammaticality)-Maze, only one of two real words continues the 
+    sentence/maintains the grammaticality of the sentence. You can read more about the maze task 
+    <a href="http://dx.doi.org/10.3758/BRM.41.1.163">here</a>, and see some information about how it compares 
+    to other online measures in <a href="http://dx.doi.org/10.1007/s10936-011-9179-x">this paper</a>. 
+</p>
+<p class="default">
+    Below is a demo of both kinds of maze task. The instructions aren't tuned specifically
+    for L-/G-maze, but they should essentially fit with what a subject would normally see.
+</p>
+
+<p class="compact">To try the maze demo, please view this page on a non-mobile device. A keyboard is required.</p>
+
+<ul class="default">
+    <li>Press "F" to view an example trial of L-Maze.</li>
+    <li>Press "J" for G-Maze.</li>
+    <li>Press "R" to reset.</li>
+</ul>
+
+<div class="default maze">
+    <p class="default" id="instructions">
+        You will be given two words side by side. Place your index fingers on the "F" and "J" keys of your 
+        keyboard. Press the Left (F) or Right (J) key to indicate word best continues the sentence. Select 
+        the best word as quickly as you can, but without making too many errors.
+    </p>
+    <p class="default hidden" id="wrong">WRONG!</p>
+    
+    <p class="default hidden" id="left">MAZE LEFT</p>
+    <p class="default hidden" id="right">MAZE RIGHT</p>
+
+    <p class="default hidden" id="end">CORRECT! Please continue to the next item at your convenience.</p>
+</div>
