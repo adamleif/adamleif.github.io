@@ -98,24 +98,25 @@
 
     .dropdown {
         position: relative;
-    }
-
-    .drop-btn {
-        padding: 0px;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-
-    .drop-btn:focus {
-        background: var(--dropBtnBackground);
-        color: var(--dropBtnText);
-    }
-
+    
     .drop-content {
         display: none;
         position: absolute;
-        background: var(--dropItem);
-        width: 300%;
+        top: 100%;
         left: -10px;
+        background: var(--dropItem);
+        width: max-content;
+        min-width: 150px;
+        z-index: 999;
+    }
+
+    .drop-content.show {
+        display: block;
     }
 
     .drop-content a {

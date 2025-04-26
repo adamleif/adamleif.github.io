@@ -18,7 +18,7 @@
     <!-- Dropdowns -->
     <li class="compact">
       <div class="dropdown">
-        <button class="drop-btn" onclick="toggleDropdown()">Professional</button>
+        <button class="drop-btn">Professional</button>
         <div class="drop-content">
           {% for link in site.data.sidebar.professional %}
             <a href="{{ link.url }}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a>
@@ -29,7 +29,7 @@
 
     <li class="compact">
       <div class="dropdown">
-        <button class="drop-btn" onclick="toggleDropdown()">Projects</button>
+        <button class="drop-btn">Projects</button>
         <div class="drop-content">
           {% for link in site.data.sidebar.projects %}
             <a href="{{ link.url }}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a>
