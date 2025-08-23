@@ -1,6 +1,6 @@
 url: "https://adamleif.net"
 enforce_ssl: adamleif.net
-basurl: ""
+baseurl: ""
 livereload: true
 exclude:
   - Gemfile
@@ -8,3 +8,13 @@ exclude:
   - node_modules
   - vendor
   - README.md
+include: 
+  - pages
+defaults:
+  - 
+    scope:
+      path: ''
+      type: pages
+    values:
+      layout: default 
+      permalink: /:basename.html
