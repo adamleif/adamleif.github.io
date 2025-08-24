@@ -3,15 +3,6 @@ Dark Mode adapted from:
 https://oakharborwebdesigns.com/blog/how-to-add-dark-mode-to-your-website/#blog-post 
 */
 
-:root {
-  --dark: #242424;
-  --medium: #282828;
-  --accent: #404040;
-  --bodyTextColorWhite: #DCDCDC;
-  --hyperPink: #FF62F9;
-  --hyperPurple: #C08DFF;
-}
-
 body.dark-mode {
   background-color: var(--dark);
 }
@@ -24,15 +15,15 @@ body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
 body.dark-mode h6{
-  color: var(--bodyTextColorWhite);
+  color: var(--white);
 }
 
 body.dark-mode main a {
-  color: #FF62F9;
+  color: var(--hyperPink);
 }
 
 body.dark-mode main a:hover {
-  color: #C08DFF;
+  color: var(--hyperPurple);
 }
 
 body.dark-mode .light {
