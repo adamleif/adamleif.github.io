@@ -12,3 +12,9 @@ div.maze {
 div.maze p {
     padding: 15px;
 }
+
+p#left,
+p#right {
+    width: 60px;
+    text-align: left;
+}

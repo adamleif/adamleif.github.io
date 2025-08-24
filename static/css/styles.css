@@ -1,112 +1,122 @@
-:root { 
-  --hyperPink: #FF00F3;;
-  --hyperPurple: #AE6CFF;
+:root {
+    --black: #0E0E0E;
+    --dark: #242424;
+    --medium: #282828;
+    --accent: #5F5F5F;
+    --accentAlt: #717171;
+    --lightGray: #8E8E8E;
+    --white: #DCDCDC;
+    --hyperPink: #FF00F3;
+    --hyperPurple: #AE6CFF;
 }
 
 .hidden {
-  display: none;
-  margin: 0;
+    display: none;
+    margin: 0;
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 body {
-  display: block;
-  margin: 8px;
+    display: block;
+    margin: 8px;
+    background: var(--white);
 }
 
 div.wrapper {
-  width: 100%;
+    width: 100%;
 }
 
 .show {
-  display: block;
+    display: block;
 }
 
 @media only screen and (max-width: 749px) {
-  main {
-    margin-left: 0px;
-    margin-top: 60px;
-    width: 100%;
-  }
+    main {
+        margin-left: 0px;
+        margin-top: 60px;
+        width: 100%;
+    }
 
-  .default {
-    display: none;
-    margin: 0;
-  }
+    .default {
+        display: none;
+        margin: 0;
+    }
 }
 
 @media only screen and (min-width: 750px) {
-  main {
-    margin-left: max(15%, 215px);
-    margin-top: 0px;
-    min-width: 65%;
-    max-width: 1000px;
-  }
+    main {
+        margin-left: max(15%, 215px);
+        margin-top: 0px;
+        min-width: 65%;
+        max-width: 1000px;
+    }
 }
 
 main {
-  display: block;
-  font-size: 18px;
-  text-align: justify;
+    display: block;
+    font-size: 18px;
+    text-align: justify;
 }
 
 main.cv {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 main.cv .pdf {
-  height: 100vh; /* Make the PDF take up the full height of the viewport */
+    height: 100vh;
+    /* Make the PDF take up the full height of the viewport */
 }
 
 main h1 {
-  margin: 15px 0;
-  font-size: 24px;
+    margin: 15px 0;
+    font-size: 24px;
 }
 
 main a {
-  color: var(--hyperPink);
-  text-decoration: none;
+    color: var(--hyperPink);
+    text-decoration: none;
 }
 
 main a:hover {
-  color: var(--hyperPurple);
+    color: var(--hyperPurple);
 }
 
 main img {
-  float: left;
-  padding-right: 10px;
+    float: left;
+    padding-right: 10px;
 }
 
 object.pdf {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 div.abstract {
-  max-width: 800px;
-  width: 100%;
+    max-width: 800px;
+    width: 100%;
 }
 
-div.abstract > h1 {
-  font-size: 18px;
-  font-weight: bold;
+div.abstract>h1 {
+    font-size: 18px;
+    font-weight: bold;
 }
 
-div.abstract > h2 { 
-  font-size: 16px;
-  font-weight: normal;
+div.abstract>h2 {
+    font-size: 16px;
+    font-weight: normal;
 }
 
-div.abstract > p { 
-  font-size: 14px;
-  font-weight: normal;
+div.abstract>p {
+    font-size: 14px;
+    font-weight: normal;
 }
 
-.silent, .silent:hover {
-  color: white;
-  text-decoration: none;
+.silent,
+.silent:hover {
+    color: var(--white);
+    text-decoration: none;
 }
