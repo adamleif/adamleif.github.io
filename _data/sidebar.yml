@@ -8,7 +8,9 @@ professional:
 projects:
   - title: "Honors Thesis"
     url: "honors_thesis.html"
-  - title: "Craigslist Housing"
+  - title: "NLP4SG Beyond ACL"
+    url: "https://github.com/asl7168/nlp4sg_beyond_acl"
+  - title: "Craigslist Housing Scraper"
     url: "https://github.com/asl7168/craigslist_housing"
     external: true
   - title: "Maze Demo"
