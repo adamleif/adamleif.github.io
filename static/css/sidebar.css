@@ -27,6 +27,8 @@
 }
 
 .sidebar a, button {
+    display: block;
+    width: auto;
     background: none;
     border: none;
     outline: none;
@@ -142,7 +144,7 @@
     }
 
     .sidebar ul {
-        margin: 20px;
+        margin: 20px 10px;
     }
 
     .sidebar .section {
